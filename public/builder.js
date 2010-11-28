@@ -6,13 +6,13 @@ var builder = {}
 builder.placeholder = "placeholder"
 
 // Set the placeholder for attaching structure.
-builder.root = function f (name) {
+builder.root = function (name) {
     this.placeholder = name;
     return this;
 }
 
 // equivalent to ruby's method_missing
-builder.__noSuchMethod__ = function f (id, args) {
+builder.__noSuchMethod__ = function (id, args) {
     var div = document.getElementById(this.placeholder);
 
     if (!div) {
