@@ -1,0 +1,15 @@
+h1. builder.js
+
+p. An example of metalinguistic abstraction in JavaScript.
+
+p. Firefox allows you to implement a method called `__noSuchMethod__`
+that will allow you to intercept calls to un-implemented methods on
+that object.
+
+p. Hopefully this will help motivate the ECMAScript committee to
+add `__noSuchMethod__` or some other support for flexible dispatch to
+the standard. This is well tread ground.
+
+p. Inspired by "Ruby's Builder":http://builder.rubyforge.org/ and "Io's Builder.":http://web.archive.org/web/20080430135919/hackety.org/2008/01/10/lazyBricksLazyMortar.html
+
+Check out the "example page":http://saladwithsteve.com/hacks/builderJs.html

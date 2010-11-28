@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Builder in JavaScript</title>
+    <script type="application/javascript" src="builder.js"></script>
+  </head>
+  <body onload="run()">
+    <h1>builder.js</h1>
+    <h3>This only works in Firefox.</h3>
+    <p>Firefox allows you to implement a <code><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/noSuchMethod">__noSuchMethod__</a></code> function for intercepting calls to un-implemented methods of an object.</p>
+
+    <p>
+      <b>Example 1:</b> bold tag
+      <p>
+        <code>
+          builder.root("blinktag").b("hello");
+        </code>
+      </p>
+    </p>
+    <div id="blinktag"></div>
+
+    <p>
+      <b>Example 2</b>: nested elements with an unordered list
+      <p>
+        <code>
+          builder.root("unordered").ul(function(b) { b.li("First").li("Second") } );
+        </code>
+      </p>
+      <div id="unordered"></div>
+    </p>
+
+
+  </body>
+</html>
